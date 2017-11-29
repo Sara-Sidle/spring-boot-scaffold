@@ -1,0 +1,33 @@
+app.name: MyApp
+spring:
+  session:
+    store-type: redis
+  redis:
+      host: 10.3.10.217
+      port: 6379
+      database: 0
+      password:
+      pool:
+        max-active: 8
+        pool.max-idle: 8
+        max-wait: -1
+        min-idle: 0
+go:
+  wy: ${app.name}gougou
+
+
+server:
+    port: 8088
+
+
+#tomcat 配置
+#server.port = 8088
+#server.session-timeout = 5
+#server.tomcat.remote-ip-header = x-forwarded-for
+#server.tomcat.protocol-header = x-forwarded-proto
+#spring.http.encoding.charset = UTF-8
+#server.tomcat.access-log-enabled = true
+#server.tomcat.access-log-pattern = common
+
+#属性可以根据运行环境自动读取不同的配置文件。例如将该属性定义为 dev 的话，Spring Boot 会额外从 application-dev.yml 文件中读取该环境的配置
+#spring.profiles.active
