@@ -5,30 +5,30 @@ spring:
     store-type: redis
 
   # redis配置
-    redis:
+  redis:
   # Redis服务器地址
-        host: 10.3.10.217
+    host: 10.3.10.217
 
   # Redis服务器连接端口
-        port: 6379
+    port: 6379
 
   # Redis数据库索引（默认为0）
-        database: 0
+    database: 0
 
   # Redis服务器连接密码（默认为空）
-        password:
+    password:
   # 连接超时时间（毫秒）
-        timeout: 0
+    timeout: 0
 
-        pool:
+    pool:
   # 连接池最大连接数（使用负值表示没有限制）
-          max-active: 8
+      max-active: 8
   # 连接池中的最大空闲连接
-          pool.max-idle: 8
-  # 连接池最大阻塞等待时间（使用负值表示没有限制）
-          max-wait: -1
-  # 连接池中的最小空闲连接
-          min-idle: 0
+      pool.max-idle: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最小空闲连接
+      min-idle: 0
 
 
 
@@ -50,9 +50,9 @@ spring:
 ## a 数据源配置
 a:
   datasource:
-    url: jdbc:oracle:thin:ryxpay/ANT3F4DH1L2D@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.10)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.11)(PORT=1521))(LOAD_BALANCE=on)(FAILOVER=ON))(CONNECT_DATA=(SERVICE_NAME=hpaydb)))
-    username: ryxpay
-    password: ANT3F4DH1L2D
+    url: jdbc:oracle:thin:@10.3.10.217:1521:frdb
+    username: ryxfx
+    password: aaa111
     driverClassName: oracle.jdbc.OracleDriver
 
 ## a 数据源配置
@@ -65,7 +65,7 @@ b:
 
 
 go:
-wy: ${app.name}gougou
+  wy: ${app.name}gougou
 
 home:
   province: ZheJiang
