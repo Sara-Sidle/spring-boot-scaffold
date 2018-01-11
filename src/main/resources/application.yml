@@ -1,8 +1,8 @@
 app.name: MyApp
 
-  spring:
-    session:
-      store-type: redis
+spring:
+  session:
+    store-type: redis
 
   # redis配置
     redis:
@@ -47,25 +47,25 @@ app.name: MyApp
     typeAliasesPackage: com.wukp.boot.moudle.*.orm
     mapperLocations: classpath:mapper/*.xml
 
-  ## a 数据源配置
-  a:
-    datasource:
-      url: jdbc:oracle:thin:ryxpay/ANT3F4DH1L2D@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.10)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.11)(PORT=1521))(LOAD_BALANCE=on)(FAILOVER=ON))(CONNECT_DATA=(SERVICE_NAME=hpaydb)))
-      username: ryxpay
-      password: ANT3F4DH1L2D
-      driverClassName: oracle.jdbc.OracleDriver
+## a 数据源配置
+a:
+  datasource:
+    url: jdbc:oracle:thin:ryxpay/ANT3F4DH1L2D@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.10)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.10.11)(PORT=1521))(LOAD_BALANCE=on)(FAILOVER=ON))(CONNECT_DATA=(SERVICE_NAME=hpaydb)))
+    username: ryxpay
+    password: ANT3F4DH1L2D
+    driverClassName: oracle.jdbc.OracleDriver
 
-  ## a 数据源配置
-  b:
-    datasource:
-      url: jdbc:oracle:thin:@10.3.10.217:1521:frdb
-      username: ryxpay
-      password: aaa111
-      driverClassName: oracle.jdbc.OracleDriver
+## a 数据源配置
+b:
+  datasource:
+    url: jdbc:oracle:thin:@10.3.10.217:1521:frdb
+    username: ryxpay
+    password: aaa111
+    driverClassName: oracle.jdbc.OracleDriver
 
 
-  go:
-  wy: ${app.name}gougou
+go:
+wy: ${app.name}gougou
 
 home:
   province: ZheJiang
