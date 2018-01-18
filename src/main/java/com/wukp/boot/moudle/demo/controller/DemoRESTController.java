@@ -35,7 +35,7 @@ public class DemoRESTController {
     public City findCity(@RequestParam(value = "cityName", required = true) String cityName) {
         System.out.println(cityName);
         City city = demoService.findByName2("sm_zhusao_param_cs");
-        System.out.println(city.getName());
+        System.out.println(city.toString());
         return city;
     }
 

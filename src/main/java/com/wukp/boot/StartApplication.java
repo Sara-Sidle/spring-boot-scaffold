@@ -21,6 +21,7 @@ import java.util.Arrays;
 //@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class}) //移除自动注入数据源
 @RestController  // 添加了一个注解
 @SpringBootApplication
+//@ServletComponentScan
 //@MapperScan("com.wukp.boot.moudle.*.dao")//加载数据库dao
 public class StartApplication {
 

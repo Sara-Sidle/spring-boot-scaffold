@@ -29,18 +29,4 @@ public class City implements Serializable {
     private String value;
     private String timestrap;
     private String status;
-
-
-    @Override
-    public String toString() {
-        return "City{" +
-                "id='" + id + '\'' +
-                ", type='" + type + '\'' +
-                ", name='" + name + '\'' +
-                ", value='" + value + '\'' +
-                ", timestrap='" + timestrap + '\'' +
-                ", status='" + status + '\'' +
-                '}';
-    }
-
 }
