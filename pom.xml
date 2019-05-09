@@ -113,7 +113,11 @@
             <artifactId>spring-boot-starter-batch</artifactId>
         </dependency>
  -->
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
 
         <!-- Spring Data JPA 依赖 :: 数据持久层框架 -->
         <dependency>
@@ -147,12 +151,12 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.16.20</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
         <!--实体Bean中大量的Getter/Setter方法，以及toString, hashCode
         例如：@Setter
             @Getter
