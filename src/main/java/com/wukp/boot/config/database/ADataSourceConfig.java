@@ -1,6 +1,7 @@
 package com.wukp.boot.config.database;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import groovy.util.logging.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -19,6 +20,7 @@ import javax.sql.DataSource;
 @Configuration
 // 扫描 Mapper 接口并容器管理
 @MapperScan(basePackages = ADataSourceConfig.PACKAGE, sqlSessionFactoryRef = "aSqlSessionFactory")
+@Slf4j
 public class ADataSourceConfig {
 
     // 精确到 cluster 目录，以便跟其他数据源隔离

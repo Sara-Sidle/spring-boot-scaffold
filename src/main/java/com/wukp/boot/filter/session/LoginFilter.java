@@ -1,5 +1,6 @@
 package com.wukp.boot.filter.session;
 
+import groovy.util.logging.Slf4j;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,7 @@ import java.io.IOException;
 @Component
 @ServletComponentScan
 @WebFilter(urlPatterns = "/api/*",filterName = "loginFilter")
+@Slf4j
 public class LoginFilter implements Filter {
 
     @Override

@@ -1,6 +1,7 @@
 package com.wukp.boot;
 
 import com.wukp.boot.property.HomeProperties;
+import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -23,6 +24,7 @@ import java.util.Arrays;
 @SpringBootApplication
 //@ServletComponentScan
 //@MapperScan("com.wukp.boot.moudle.*.dao")//加载数据库dao
+@Slf4j
 public class StartApplication {
 
     @Autowired

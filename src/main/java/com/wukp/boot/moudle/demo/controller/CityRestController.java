@@ -1,6 +1,7 @@
 package com.wukp.boot.moudle.demo.controller;
 
 import com.wukp.boot.moudle.demo.service.DemoService;
+import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(value = "/city")
+@Slf4j
 public class CityRestController {
 
     @Autowired

@@ -1,5 +1,6 @@
 package com.wukp.boot.config;
 
+import groovy.util.logging.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by bysocket on 08/09/2017.
  */
 @Configuration
+@Slf4j
 public class MessageConfiguration {
 
     @Bean
