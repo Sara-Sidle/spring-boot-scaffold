@@ -8,6 +8,12 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
+/**
+ *
+ *
+ * @author:
+ * When: 2019/5/19 21:30
+ **/
 @Component
 @ServletComponentScan
 @WebFilter(urlPatterns = "/api/*",filterName = "loginFilter")
